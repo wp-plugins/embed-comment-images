@@ -23,7 +23,7 @@ You can specify your comment width so the images are fitted nicely. Images are n
 Do note that people can link extremely large images and your page loading can be compromised because of that.
 
 Demo:
-[Embed Comment Images](http://www.ascic.net/embed-comment-images/ “Embed Images in Comments”)
+[Embed Comment Images](http://www.ascic.net/embed-comment-images/ "Embed Images in Comments")
 
 == Installation ==
 1. Upload "eiic.php" to the "/wp-content/plugins/" directory.
@@ -36,9 +36,6 @@ No. It just wrap any URL in comments which points to image into IMG tag.
 
 = Can I set size of images? =
 Yes. But setting size only create a container for image. Image still can be any resolution.
-
-= Can I set size of images? =
-Yes. But setting the size only create a container for image. Image still can be any resolution.
 
 == Screenshots ==
 1. The screenshot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
