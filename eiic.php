@@ -4,11 +4,11 @@ Plugin Name: Embed Images in Comments
 Plugin URI: http://www.ascic.net/embed-images-in-comments/
 Description: This plugin embeds all image URLs (.jpg, .gif, .png) with an IMG tag.
 Author: Zeljko Ascic
-Version: 0.2
+Version: 0.3
 Author URI: http://www.ascic.net/
 */   
    
-/*  Copyright 2013 
+/*  Copyright 2015
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -65,7 +65,7 @@ function eiic_settings_page() {
 add_action('comment_text', 'comments_img_embed', 2);
 function comments_img_embed($comment) {
   $size = get_option('option_eiic');
-  $comment = preg_replace('#(http://([^\s]*)\.(jpg|gif|png))#','<img src="$1" alt="" width="'.$size.'" height="" />', $comment);
+  $comment = preg_replace(array('#(http://([^\s]*)\.(jpg|gif|png))#','#(https://([^\s]*)\.(jpg|gif|png))#'),'<img src="$1" alt="" width="'.$size.'" height="" />', $comment);
   return $comment;
 }
 ?>
