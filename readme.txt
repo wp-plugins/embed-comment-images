@@ -53,6 +53,9 @@ Yes. But setting size only create a container for image. Image still can be any 
 * Initial release.
 
 == Upgrade Notice ==
+= 0.3 =
+* Added support for images residing on https urls.
+
 = 0.2 =
 * Added image resize option.
 
